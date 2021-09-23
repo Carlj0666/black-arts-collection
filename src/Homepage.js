@@ -8,16 +8,20 @@
 
 // export default Homepage
 import React from 'react';
+import './App.css';
 
 class Homepage extends React.Component{
 
-
+    state = {
+        color: 'red',
+        on: true
+    }
 
     render(){
         return(
-            <div>
+            <div style={{color: this.state.color}}>
                 <h1>Welcome to {this.props.color} Arts Home</h1>
-                <h4>The place where {this.props.alignment} Arts are cultivated</h4>
+                <h4>A place where {this.props.alignment} Arts are cultivated</h4>
             </div>
         )
     }
