@@ -4,6 +4,18 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const url = "http://localhost:3001/arts"
+
+fetch(url)
+  .then(resp => resp.json())
+  .then(data => renderArts(data))
+
+function renderArts(data){
+  const arts = renderArts.data
+  arts.map(a => )
+  debugger
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
